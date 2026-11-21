@@ -852,14 +852,32 @@ input[type="range"] {
   }
 }
 
+@media (max-width: 900px) {
+  .panel-left,
+  .panel-right {
+    display: none !important;
+  }
+}
+
 @media (max-width: 720px) {
-  .panel-left {
+  .control-bar {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .brand-subtitle {
     display: none;
   }
-  .panel-right {
-    width: calc(100% - 24px);
-    top: auto;
-    height: 42vh;
+  .brand-title h1 {
+    font-size: 12px;
+  }
+  .virtual-clock {
+    font-size: 18px;
+  }
+  .speed-presets {
+    display: none;
   }
 }
 
